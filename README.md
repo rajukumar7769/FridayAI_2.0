@@ -16,7 +16,7 @@ With its user-friendly interface and cutting-edge technology, the Sport Expert V
 
 1. Clone this repo
 2. Import used modules in your pc
-3. Expoert cookies_files from Gemini AI Website - https://gemini.google.com/app
+3. Expoert API KEY from Gemini AI Website - https://aistudio.google.com/app/apikey
 4. Run code And Use
 
 
