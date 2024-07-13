@@ -71,7 +71,7 @@ def chat(prompt):
     text3 = f"Friday A.I. response for Prompt: {prompt} \n *************************\n\n"
 
     result = client.generate_content(
-        f"Friday A.I.(Voice Assistant) response for Prompt: {prompt} \n *************************\n\n")
+        f"Friday A.I.(Voice Assistant) response As Sport Expert for Prompt: {prompt} \n *************************\n\n")
     # answer = result.get("content")
     print(result.text)
 
