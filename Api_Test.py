@@ -9,6 +9,7 @@ from gemini import Gemini
 #   }
 
 # client = Gemini(cookies=cookies)
+GOOGLE_API_KEY="Paste Your Gemini API Key "
 
 client = Gemini(cookie_fp="cookies_file.json")
 prompt = "Hello, Gemini. Tell me about Large Language Models."
