@@ -8,7 +8,7 @@ import wikipedia
 import psutil
 import google.generativeai as genai
 
-from test2 import GOOGLE_API_KEY
+from Api_Test import GOOGLE_API_KEY
 
 speaker = pyttsx3.init('sapi5')
 voices = speaker.getProperty('voices')
