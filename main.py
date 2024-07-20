@@ -6,7 +6,9 @@ import datetime
 from gemini import Gemini
 import wikipedia
 import psutil
+import google.generativeai as genai
 
+from test2 import GOOGLE_API_KEY
 
 speaker = pyttsx3.init('sapi5')
 voices = speaker.getProperty('voices')
@@ -66,12 +68,14 @@ def chat(prompt):
     # load_dotenv()
     # token = os.getenv("bard_api_key")  # here we use bardapi
     # bard = Bard(token=token)
-    client = Gemini(cookie_fp="cookies_file.json")
+    # client = Gemini(cookie_fp="cookies_file.json")
+    genai.configure(api_key=GOOGLE_API_KEY)
+    model = genai.GenerativeModel('gemini-pro')
 
     text3 = f"Friday A.I. response for Prompt: {prompt} \n *************************\n\n"
 
-    result = client.generate_content(
-        f"Friday A.I.(Voice Assistant) response As Sport Expert for Prompt: {prompt} \n *************************\n\n")
+    result = model.generate_content(
+        f"Friday A.I.(Voice Assistant) response As Sport Expert for Prompt in short words without points: {prompt} \n *************************\n\n")
     # answer = result.get("content")
     print(result.text)
 
